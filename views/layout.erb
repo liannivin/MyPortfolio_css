@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <title>Lian's Portfolio</title>
+    <style type="text/css">
+      body {
+        font-family: "Acme", sans-serif;
+        /* font-family: sans-serif; */
+        background-color: bisque;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border: 2px dotted gray;
+        padding: 30px;
+        overflow: scroll;
+        /* box-sizing: border-box; */
+        word-wrap: break-word;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      ul {
+        list-style-type: none;
+      }
+      i {
+        font-size: 14px;
+        margin-left: 40%;
+      }
+      p {
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
